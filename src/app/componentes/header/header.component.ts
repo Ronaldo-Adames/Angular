@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   public bntInicio: String = 'Inicio';
   public bntCadastrar: String = 'Cadastrar produtos';
-  public bntHome: String = 'Home';
+  
 
   constructor() { }
 
