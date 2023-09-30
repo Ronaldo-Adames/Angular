@@ -1,0 +1,26 @@
+h1{ // tag titulo universal
+    background-color: rgb(94, 23, 23); // altera fundo
+    color: white; // altera cor das letras
+}
+h3{
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+button{
+    background-color: aqua;
+    border-radius:  16px; //deixa as borbas arredondadas
+    width: 100px;
+    height: 3vp;
+    border: none;
+}
+
+
+//ao passar o cursor por cima
+// é a alteração que deve ocorrer
+button:hover{
+    background-color:red;
+
+}
+
+
+
