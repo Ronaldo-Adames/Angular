@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './componentes/home/home.component';
+import { CadastrarProdutoComponent } from './componentes/cadastrar-produto/cadastrar-produto.component';
 
 
 // aqui colocamos nossas rotas
@@ -12,8 +13,17 @@ const routes: Routes = [
 
 // 2 - criar a rota da home
 // defino rota e defino o componente
-{ path: 'home', component: HomeComponent}
+{ path: 'home',
+loadChildren: () => import('./componentes/home/home.module').then((m)=> m.HomeModule)},
+
+{path: 'novo',
+loadChildren:() =>
+import('./componentes/cadastrar-produto/cadastrar-produto.module'). then(
+  (m) => m.CadastrarProdutoModule
+)
+},
 ];
+
 
 
 // principal arquivo de roteamento

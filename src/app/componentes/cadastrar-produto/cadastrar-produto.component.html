@@ -1,0 +1,21 @@
+<form [formGroup]="formularioProduto">
+    <!-- formControlName = algum atributo que foi construido-->
+      
+<input type="text" formControlName="name">
+<input type="text" formControlName="description">
+<input type="text" formControlName="code">
+<input type="text" formControlName="costPrice">
+<input type="text" formControlName="salePrice">
+<input type="text" formControlName="preparationTime">
+<input type="text" formControlName="productType">
+
+
+<select formControlName="productType">
+<option value="DESSERT">DESSERT</option>
+<option value="DRINK">DRINK</option>
+<option value="SNAK">SNAK</option>
+</select>
+
+<button type="submit" (click)="enviarFormulario()">Salvar</button>
+</form>
+
